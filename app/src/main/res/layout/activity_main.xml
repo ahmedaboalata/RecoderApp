@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activites.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:id="@+id/ToolBar"
+        android:background="@color/colorPrimaryDark">
+    </androidx.appcompat.widget.Toolbar>
+    <com.astuetz.PagerSlidingTabStrip
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:id="@+id/tabs"
+       app:pstsTabTextColor="@color/Textcolor"
+        app:pstsIndicatorColor="@color/colorAccent"
+        app:pstsIndicatorHeight="4dp"
+        app:pstsShouldExpand="true"
+        >
+
+    </com.astuetz.PagerSlidingTabStrip>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/cardview_light_background"
+        android:id="@+id/view_pager"
+        >
+    </androidx.viewpager.widget.ViewPager>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+
+    </FrameLayout>
+
+</LinearLayout>
