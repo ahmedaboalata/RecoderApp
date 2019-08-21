@@ -113,7 +113,7 @@ public class FileViewrFragment extends Fragment {
     }
     public static void add()
     {
-        Record record20=new Record("Audio"+currentTime,String.valueOf(time),file.getAbsolutePath(),String.valueOf(currentTime.getTimezoneOffset()));
+        Record record20=new Record("Audio"+currentTime,String.valueOf(time),file.getAbsolutePath(),String.valueOf(currentTime.getTime()));
         recordViewmodel.insert(record20);
     }
     private void loadFragment(Fragment fragment) {
